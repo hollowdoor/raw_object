@@ -1,0 +1,41 @@
+{
+  "name": "raw-object",
+  "description": "Create an object with a null prototype",
+  "keywords": [
+    "object",
+    "create",
+    "assign"
+  ],
+  "version": "1.0.0",
+  "scripts": {
+    "build": "ebam",
+    "test": "npm run build && node test/run.js"
+  },
+  "license": "MIT",
+  "ebam": {
+    "entry": "src/index.js",
+    "transforms": {
+      "dangerousForOf": false,
+      "dangerousTaggedTemplateString": false
+    }
+  },
+  "author": "Quentin Engles <hollowdoor99@gmail.com> (https://hollowdoor.github.io)",
+  "dependencies": {
+    "object-assign": "^4.1.1"
+  },
+  "main": "dist/bundle.js",
+  "jsnext:main": "dist/bundle.es.js",
+  "module": "dist/bundle.es.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hollowdoor/raw_object.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hollowdoor/raw_object/issues"
+  },
+  "homepage": "https://github.com/hollowdoor/raw_object#readme"
+}
